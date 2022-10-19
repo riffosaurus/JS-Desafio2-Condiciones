@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parte 2 - Desafio Condiciones</title>
+</head>
+<body>
+    
+
+<p>Puedes llevar 10 stickers máximo</p>
+
+<div>
+    <img src="assets/imgs/Gaming-Joystick-icon.png" alt="">
+    <input id="input1" type="number">
+</div>
+
+<div>
+    <img src="assets/imgs/Music-icon (1).png" alt="">
+    <input id="input2" type="number">
+</div>
+
+<div>
+    <img src="assets/imgs/music-icon.png" alt="">
+    <input id="input3" type="number">
+</div>
+
+<p id="resultado"></p>
+
+<button onclick="
+var stickers1 = document.querySelector('#input1').value  /* variables de cada sticker */
+var stickers2 = document.querySelector('#input2').value
+var stickers3 = document.querySelector('#input3').value
+
+totalstickers = Number(stickers1) + Number(stickers2) + Number(stickers3);
+
+
+
+if (totalstickers > 10) {
+    par = document.querySelector('#resultado')
+    par.innerHTML = 'llevas demasiados stickers'
+ }
+
+ else {
+    par = document.querySelector('#resultado')
+    par.innerHTML = 'llevas '+totalstickers+ ' stickers'
+ }
+    /* escribir resultado de suma de stickers */
+">Calcular</button>
+
+
+
+
+</body>
+</html>

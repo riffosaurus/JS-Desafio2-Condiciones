@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parte 3 - Desafio Condiciones</title>
+</head>
+<body>
+    
+    <h1>Ingresa el Password</h1>
+    <br>
+<select name="valor1" id="valor1">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+</select>
+<select name="valor2" id="valor2">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+</select>
+<select name="valor3" id="valor3">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+</select>
+<br>
+<p id="resultado"></p>
+<br>
+<button onclick="
+var numero1 = Number(document.querySelector('#valor1').value);
+var numero2 = Number(document.querySelector('#valor2').value);
+var numero3 = Number(document.querySelector('#valor3').value);
+
+if (numero1 === 9 && numero2 === 1 && numero3 === 1 ) {
+    par = document.querySelector('#resultado')
+    par.innerHTML = 'Password 1 correcto'
+}
+
+else if (numero1 === 7 && numero2 === 1 && numero3 === 4 ) {
+    par = document.querySelector('#resultado')
+    par.innerHTML = 'Password 2 correcto'
+}
+
+else {
+    par = document.querySelector('#resultado')
+    par.innerHTML = 'Password incorrecto'
+}
+
+">
+    Ingresar
+</button>
+
+
+
+
+
+</body>
+</html>
